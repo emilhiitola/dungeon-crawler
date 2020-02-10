@@ -1,0 +1,69 @@
+You fell into a dungeon full of monsters. There is no escape!
+The only chance you have is to kill enough monsters to survive.
+
+Controls:
+WASD for movement
+Space for attack
+P toggle pause
+Left shift to use potion
+Q to change weapon
+E to change potion 
+F toggle inventory
+ESC to go back
+Z to upgrade weapon
+X to repair weapon
+C to upgrade potion
+V to delete equipped weapon
+B to delete equipped potion
+
+Objective: get score 1000
+Score is the cumulative XP.
+XP gain is monsterlvl*5
+levelupXP increases every time player levelups
+levelupXP=50*1.5^lvl
+
+
+
+
+
+
+You: 
+	HP = 300 + 10*lvl 
+	dmg = 10 + 2*lvl +weapon dmg
+	Inventory size: 10 
+Monsters:
+	random level 
+	HP = 40 to 240 + 12*lvl
+	dmg = 0 to 8 + 2*lvl
+	Inventory size: 10
+	
+
+Weapons:
+Sword:	has a range of 1 tile in the direction the player faces
+	dmg = 8*lvl
+	duration = 5*lvl
+	
+
+Axe:	hits all adjecent tiles
+	dmg = 5*lvl
+	duration = 5*lvl
+
+Bow:	hit everything in the direction the player faces
+	dmg = 5*lvl
+	duration = 5*lvl
+
+Potions:
+Health:	heals player for 10*lvl every turn
+	duration = 5*lvl
+Attack:	increases players attack with 2*lvl
+	duration = 5*lvl
+Turn:	monsters cant move during usage of this potion
+	duration = 2*lvl 
+
+
+Gameplay:
+Turnbased. Attacking, moving and crafting uses one turn.
+Every turn monsters move towards the player or if adjecent to player
+monsters attack the player. 
+
+
